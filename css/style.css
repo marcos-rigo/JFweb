@@ -514,7 +514,7 @@ body {
     #texto-carruel {
         /* background-color: #4272bbac; */
         width: 30vw;
-        font-size: large;
+        font-size: 14px;
     }
 }
 
@@ -627,10 +627,7 @@ body {
     background-color: #fff;
   }
   
-  .page-section {
-    padding: 4rem 0;
-  }
-
+ 
   .fondo-fijo {
     background-image: url(../img/fondo-fijo.jpg);
     background-repeat: no-repeat;
@@ -666,8 +663,29 @@ body {
     justify-content: center;
 
   }
+
+
+#img-caja {
+    overflow: hidden; 
+    /* border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff; */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+#img-caja img {
+    transition: all ease-in-out 0.3s;
+  }
+
+  #img-caja img:hover {
+    transform: scale(1.1);
+  }
+
   
-  
+
+
+
 /*** Boton color **/
 
 #btnazulrosa {
@@ -678,6 +696,19 @@ body {
 #btnazulrosa:hover {
     background-color: #d5247a;
 }
+
+@media screen and (max-width: 996px) {
+    #btnazulrosa {
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+
+    }
+}
+
+
+
 
 
 /*** About ***/
@@ -1089,7 +1120,10 @@ body {
 .footer .copyright {
     padding: 25px 0;
     border-top: 1px solid rgba(256, 256, 256, .1);
+    
 }
+
+
 
 .footer .copyright a {
     color: var(--light);
