@@ -50,7 +50,7 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 5000,
+        smartSpeed: 1700,
         loop: true,
         nav: false,
         dots: true,
