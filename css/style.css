@@ -674,7 +674,7 @@ body {
   
  
   .fondo-fijo {
-    padding: 100px;
+    /* padding: 100px; */
     background-image: url(../img/fondo-fijo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -692,9 +692,24 @@ body {
   }
   
   #tituloh2 {
+    font-size: 60px;
+    font-weight: 700;
     color:#ffffff;
     text-shadow: 4px 4px 8px black;
   }
+
+  /* Responsividades del texto de caja de herramientas con fondo fijo */
+
+@media screen and (max-width: 576px) {
+    #tituloh2 {
+        font-size: 30px;
+        /* font-weight: 100; */
+        color:#ffffff;
+        text-shadow: 4px 4px 8px black;
+    }
+}
+
+
   
   #psubtitulo {
     color:#ffffff;
@@ -702,6 +717,17 @@ body {
     font-size: 24px;
     font-weight: 700;
   }
+
+   /* Responsividades del texto del subtitulo de caja de herramientas con fondo fijo */
+
+@media screen and (max-width: 576px) {
+    #psubtitulo {
+        font-size: 20px;
+        /* font-weight: 100; */
+        color:#ffffff;
+        text-shadow: 4px 4px 8px black;
+    }
+}
 
   #logos {
     display: flex;
@@ -753,6 +779,12 @@ body {
 
 #btnazulrosa:hover {
     background-color: #d5247a;
+}
+@media screen and (max-width: 576px) {
+    #btnazulrosa {
+        width: 50%;
+
+    }
 }
 
 @media screen and (max-width: 996px) {
