@@ -1253,3 +1253,26 @@ body {
   #texto-justificado {
     text-align: justify;
   }
+
+
+
+
+
+
+
+  /* Responsividades del titulo de las portadas de las distintas paginas */
+
+  #texto-portada-seccion {
+    font-size: 60px;
+    font-weight: 700;
+    color:#ffffff;
+    text-shadow: 4px 4px 8px black;
+  }
+
+  @media screen and (max-width: 576px) {
+    #texto-portada-seccion {
+        font-size: 50px;
+        color:#ffffff;
+        text-shadow: 4px 4px 8px black;
+    }
+}
